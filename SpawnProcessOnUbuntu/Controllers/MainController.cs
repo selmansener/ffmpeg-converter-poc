@@ -85,7 +85,7 @@ namespace SpawnProcessOnUbuntu.Controllers
             }
 
             // TODO: use file id instead of guid
-            var filePath = $"{dir}/{Guid.NewGuid()}.mp4";
+            var filePath = $"{dir}/{guid}.mp4";
 
             using (FileStream fileStream = System.IO.File.Create(filePath))
             {
